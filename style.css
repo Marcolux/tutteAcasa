@@ -14,6 +14,8 @@ body{
 #Trailer{
 height: 90vh;
 width: auto;
+margin-top: 4vh;
+margin-bottom: 2vh;
 
 }
 #TrailerBox{
@@ -25,9 +27,57 @@ width: auto;
     width: 100vw;
 }
 
+section{
+    padding-left: 4vw;
+    padding-right: 4vw;
+    padding-bottom: 2vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    text-align:left;
+    text-justify:distribute;
+    
+    justify-content: center;
+   
+    /* padding: 1vh; */
+}
+h4{
+    font-size: 1.7vw;
+}
+h3{
+    font-size: 1.5vw;
+}
+p{
+   font-weight:100;
+   font-size: 1.3vw;
+}
+
+#OrganizzaProiezione{
+    text-align: center;
+    
+}
+
+
+#schedaFilm{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+#locandina{
+    height: 90vh;
+}
+
+footer{
+    height: 5.7vh;
+    background: black;
+    color: white;
+}
+
 @font-face {
     font-family: 'Tw Cen MT';
     font-style: normal;
-    font-weight: normal;
+    font-weight:100;
     src: local('Tw Cen MT'),  url('./styles/TwCenMT.woff') format('woff');
     }
+
