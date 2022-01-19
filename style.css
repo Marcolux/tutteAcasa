@@ -1,0 +1,26 @@
+html{
+font-family:'Tw Cen MT';
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+#Trailer{
+height: 90vh;
+width: auto;
+
+}
+#TrailerBox{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    background: black;
+    width: 100vw;
+}
+
+@font-face {
+    font-family: 'Tw Cen MT';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Tw Cen MT'),  url('./styles/TwCenMT.woff') format('woff');
+    }
