@@ -1,5 +1,5 @@
 html{
-font-family:'Tw Cen MT';
+/* font-family:'Tw Cen MT'; */
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -21,18 +21,19 @@ object-fit: cover;
 margin-bottom: 2vh; */
 z-index: -1;
 opacity: 1;
+border-bottom: 2px solid #E0C228;
 }
 #overlay{
     display: flex;
     flex-direction: column;
     margin-bottom: 0;
     position: absolute;
-    left: 25vw;
+    align-self: center;
     bottom: 10vh;
     color: white;
     font-size: 7vh;
     letter-spacing: 2px;
-
+    /* border-bottom: 2px solid #E0C228; */
 }
 #overlayText{
     display: flex;
@@ -73,8 +74,8 @@ opacity: 1;
 }
 #overlay h1{
     padding: 0;
-    margin-left: 25px;
-    letter-spacing: 4px;
+    margin-left: 1vw;
+    letter-spacing: .2vw;
 }
 #overlayTutte{
     animation: fadeIn 8s;
@@ -108,24 +109,23 @@ opacity: 1;
     height: 100vh;
     z-index: 1;
     opacity: 1;
-
+    border-bottom: 2px solid #E0C228;
     
 }
-#bodyDescription{
+/* #bodyDescription{
     height:90vh;
-}
+} */
 
 section{
     padding-left: 4vw;
     padding-right: 4vw;
     padding-bottom: 2vw;
-    height: 27vh;
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
+    /* max-height: 100vh; */
     text-align:left;
     text-justify:distribute;
-    
+    opacity: 1;
     justify-content: center;
    
     /* padding: 1vh; */
@@ -136,43 +136,147 @@ h4{
 h3{
     font-size: 1.5vw;
 }
-p{
+/* p{
    font-weight:100;
    font-size: 1.3vw;
-}
+} */
 
 #OrganizzaProiezione{
     text-align: center;
  
     
 }
+/* _____________________IL COLLETTIVO________________ */
+#DescrizioneCollettivo{
+    display: flex;
+    flex-direction: column;
+    padding: 2vh;
+    font-size: 2vw;
+    font-weight:100;
+    /* align-items: center; */
+    justify-content: center;
+    margin-right: 2vw;
+    max-width: 50vw;
+}
+#DescrizioneCollettivo img{
+   margin-left: 10vw;
+}
+#DescrizioneCollettivo h3{
+    color:#E0C228 ;
+    font-size: 2.5vw;
+}
 #IlCollettivo{
-    /* background:#99bfb3 ; */
+    display: flex;
+    padding: 2vh;
+    /* background: black; */
+    opacity: 1;
+}
+#IlCollettivoBox{
+    display: flex;
+    /* border: 1px solid #E0C228; */
+    border-radius: .1vh;
+    background: white;
+    padding: 1vh;
+
 }
 
-#schedaFilm{
+/* ________________IL FILM_________________ */
+
+
+#IlFilm{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border-bottom: 2px solid #E0C228;
+    color: rgb(255, 255, 255);
+
+}
+/* #schedaFilm{
     display: flex;
     width: 100vw;
-    justify-content: center;
-}
-#locandina{
-    height: 95vh;
+    justify-content:space-evenly;
+} */
+.Locandina{
+    height: 75vh;
+    box-shadow: -.5px -.5px 2px 2px #E0C228 ;
+    opacity: 1;
     /* width: 45vw; */
 
+}
+#LocandinaFilm{
+   opacity: 1;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 90vw;
+    height: 67vh;
+    padding: 1vh;
+    margin-top: 4vh;
+
+   /* color: rgb(0, 0, 0); */
+   color: white;
+}
+#IlFilm a{
+    margin-left: 80vw;
 }
 #FilmInfo{
     display: flex;
     flex-direction: column;
-    width: 45vw;
-    font-size: 2.5vh;
-    /* align-items: center; */
-    justify-content:space-evenly;
+    height: 55vw;
+    margin-left: 5vw;
+    font-size: 2vh;
+    justify-content: center;
+    align-content:center;
     text-align: left;
-    margin-left: 3vw;
+  
+    /* background:  #99BFB3 ; */
 }
+.FilmInfoLi{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    color:#E0C228 ;
+}
+.FilmInfoLi span{
+    color: white;
+}
+.FilmInfoList li{
+    color:white;
+    /* color:rgb(0, 0, 0); */
+}
+#Sinossi{
+    /* background-color: rgb(255, 255, 255); */
+    padding: 2vh;
+    border-radius: .2vh;
+    font-weight: 100;
+    /* color:#000000; */
+    color:#ffffff;
+    border: 2px solid #E0C228; 
+    font-size: 2.5vh;
+    max-height: 17vh;
+}
+#Sinossi span{
+    color: #E0C228;
+}
+
 ul{
 list-style: none;
 } 
+
+.linkToPages{
+    border: 1px solid  #E0C228;
+    padding: 1vh;
+    /* margin-left: 8vw; */
+    width: fit-content;
+    /* margin-top: 2vh; */
+    text-decoration: none;
+    color: #E0C228;
+    border-radius: 1vh;
+}
+.linkToPages:hover{
+    color: white;
+    background: #E0C228;
+}
 
 footer{
     height: 10vh;
@@ -185,5 +289,28 @@ footer{
     font-style: normal;
     font-weight:100;
     src: local('Tw Cen MT'),  url('./styles/TwCenMT.woff') format('woff');
+    }
+
+
+    /* _______________Seconda Pagina: Il Film______________ */
+    #IlFilmTrailer{
+        max-height: 60vh;
+    }
+    #trailerFilmPage{
+        text-align: center;
+        margin-top: 3vh;
+        font-size: 3vh;
+    }
+    #SinossiLunga{
+        display: flex;
+        font-weight:300;
+        font-size: larger;
+        width: 85vw;
+        padding: 1vh;
+        margin-top: 2vh;
+    }
+    #SinossiLunga span{
+        font-size: 2vh;
+        font-weight: 600;
     }
 
