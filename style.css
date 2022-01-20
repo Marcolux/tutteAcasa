@@ -12,26 +12,113 @@ body{
 }
 
 #Trailer{
-height: 90vh;
-width: auto;
-margin-top: 4vh;
-margin-bottom: 2vh;
+width: 100vw;
+height: 100vh;
+background: black;
+object-fit: cover;
+/* margin-top: 4vh;
+margin-bottom: 2vh; */
+z-index: -1;
+opacity: 1;
+}
+#overlay{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    position: absolute;
+    left: 25vw;
+    bottom: 10vh;
+    color: white;
+    font-size: 7vh;
+    letter-spacing: 2px;
 
 }
+#overlayText{
+    display: flex;
+    margin-bottom: 25vh;
+}
+#scrollDown{
+    font-size: 2.5vh;
+    align-self: center;
+    text-decoration: none;
+    color: #F5D42F;
+    margin: 0;
+    position: absolute;
+    bottom: 0vh;
+    border: 1px solid  #F5D42F;
+    padding: 8px;
+    border-radius: 12px;
+}
+#scrollDown:hover{
+    color: white;
+    background: #F5D42F;
+    /* text-shadow: 1px 1px black; */
+}
+#scrollUp{
+    font-size: 2.5vh;
+    align-self: center;
+    text-decoration: none;
+    color: #F5D42F;
+    margin: 0;
+    margin-top: 4vh;
+    border: 1px solid  #F5D42F;
+    padding: 8px;
+    border-radius: 12px;
+}
+#scrollUp:hover{
+    color: white;
+    background: #F5D42F;
+    /* text-shadow: 1px 1px black; */
+}
+#overlay h1{
+    padding: 0;
+    margin-left: 25px;
+    letter-spacing: 4px;
+}
+#overlayTutte{
+    animation: fadeIn 8s;
+}
+#overlaySenape{
+    color: #F5D42F;
+    margin-right: 30px;
+    animation: fadeIn 10s;
+    
+    
+
+}
+@keyframes fadeInOut {
+    0% {opacity:0;}
+    50%{opacity:1;}
+    100%{opacity: 0;}
+    
+}
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100%{opacity:1;}
+  
+    
+}
 #TrailerBox{
-    padding: 2vh;
     display: flex;
     flex-direction: column;
     justify-items: center;
-    background: black;
+    background: rgba(0, 0, 0, 0.762);
     width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    opacity: 1;
+
+    
+}
+#bodyDescription{
+    height:90vh;
 }
 
 section{
     padding-left: 4vw;
     padding-right: 4vw;
     padding-bottom: 2vw;
-    height: 30vh;
+    height: 27vh;
     display: flex;
     flex-direction: column;
     border: 1px solid black;
@@ -65,12 +152,26 @@ p{
     justify-content: center;
 }
 #locandina{
-    height: 90vh;
-    
+    height: 95vh;
+    /* width: 45vw; */
+
 }
+#FilmInfo{
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    font-size: 2.5vh;
+    /* align-items: center; */
+    justify-content:space-evenly;
+    text-align: left;
+    margin-left: 3vw;
+}
+ul{
+list-style: none;
+} 
 
 footer{
-    height: 5.7vh;
+    height: 10vh;
     background: black;
     color: white;
 }

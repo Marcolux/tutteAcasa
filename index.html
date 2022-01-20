@@ -12,34 +12,54 @@
 </header>
 <body>
     <div id="TrailerBox">
-    <video id="Trailer" src="./imgs/TAC_trailer.mp4" autoplay controls muted></video>
-    </div>
-    <section id="IlFilm">
-        <h3 id="Sinossi">
-            Un documentario partecipato composto da oltre 8.000 videodiari, 
-            girati con il cellulare da 500 donne di estrazione sociale ed età diverse durante il primo lockdown, 
-            che ha colpito l’Italia nella primavera del 2020.<br>
-            “Tutte a Casa - memorie digitali da un mondo sospeso” indaga cosa ci spinge a reagire durante una crisi e come si rinasce, 
-            a volte più forti, a volte più fragili o semplicemente diverse.</h3>
-            <a href="ilFilm.html">Informazioni</a>
-     
-    </section>
     
-    <section id="IlCollettivo">
-        <h3>La nostra storia:</h3>
-        <p>Siamo un gruppo di  sedici professioniste del mondo del cinema e della comunicazione, 
-        che nei primi giorni della quarantena ci siamo incontrate su un gruppo Facebook dedicato al cinema 
-        e abbiamo deciso di unire le forze, colte dall’urgenza di documentare il momento di crisi che si stava configurando. 
-        Così è nato il Collettivo Tutte a casa e successivamente l'omonima associazione. 
-        Abbiamo messo al centro della nostra attività alcuni principi per noi fondamentali: la partecipazione, l’orizzontalità e la gentilezza. 
-        La nostra sfida è stata quella di continuare a raccontare storie e lavorare nonostante la crisi, perciò abbiamo iniziato ad organizzare, 
-        produrre e dirigere un film a distanza, creando una vera e propria casa di produzione online tutta al femminile.
-        </p>
-    </section>
+   
+        <video id="Trailer" autoplay muted loop>
+            <source src="./imgs/TAC_trailer.mp4#t=3" loop>
+            <script>
+                document.getElementById("Trailer").loop = true;
+            </script>
+        </video>
+        
+        <div id="overlay">
+            <div id="overlayText">
+            <!-- <h1>Il Collettivo Tutte a Casa</h1> -->
+            <h1 id="overlayTutte">TUTTE A</h1>
+            <h1 id="overlaySenape"> CASA</h1>
+            </div>
+            <a id="scrollDown" href="#bodyDescription">Scopri di più</a>
+        </div>
 
-    <section id="OrganizzaProiezione">
-        <h3>Vorresti proiettare il film nella tua città? <a href= "mailto:cristinaderedita@gmail.com">Scrivici</a> , le valigie sono già pronte!</h3>
-    </section>
+    </div>
+    <div id="bodyDescription">
+        <section id="IlFilm">
+            <h3 id="Sinossi">
+                Un documentario partecipato composto da oltre 8.000 videodiari, 
+                girati con il cellulare da 500 donne di estrazione sociale ed età diverse durante il primo lockdown, 
+                che ha colpito l’Italia nella primavera del 2020.<br>
+                “Tutte a Casa - memorie digitali da un mondo sospeso” indaga cosa ci spinge a reagire durante una crisi e come si rinasce, 
+                a volte più forti, a volte più fragili o semplicemente diverse.</h3>
+                <a href="ilFilm.html">Informazioni</a>
+        
+        </section>
+        
+        <section id="IlCollettivo">
+            <h3>La nostra storia:</h3>
+            <p>Siamo un gruppo di  sedici professioniste del mondo del cinema e della comunicazione, 
+            che nei primi giorni della quarantena ci siamo incontrate su un gruppo Facebook dedicato al cinema 
+            e abbiamo deciso di unire le forze, colte dall’urgenza di documentare il momento di crisi che si stava configurando. 
+            Così è nato il Collettivo Tutte a casa e successivamente l'omonima associazione. 
+            Abbiamo messo al centro della nostra attività alcuni principi per noi fondamentali: la partecipazione, l’orizzontalità e la gentilezza. 
+            La nostra sfida è stata quella di continuare a raccontare storie e lavorare nonostante la crisi, perciò abbiamo iniziato ad organizzare, 
+            produrre e dirigere un film a distanza, creando una vera e propria casa di produzione online tutta al femminile.
+            </p>
+        </section>
+
+        <section id="OrganizzaProiezione">
+            <h3>Vorresti proiettare il film nella tua città? <a href="mailto:cristinaderedita@gmail.com?subject=Hello">Scrivici</a> , le valigie sono già pronte!</h3>
+            <a id="scrollUp" href="#TrailerBox">Torna Su</a>
+        </section>
+    </div>
 </body>
 <footer>
 
