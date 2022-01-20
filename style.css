@@ -5,6 +5,7 @@ flex-direction: column;
 align-items: center;
 margin: 0;
 padding: 0;
+opacity: 1;
 }
 body{
     margin: 0;
@@ -41,33 +42,33 @@ opacity: 1;
     font-size: 2.5vh;
     align-self: center;
     text-decoration: none;
-    color: #F5D42F;
+    color: #E0C228;
     margin: 0;
     position: absolute;
     bottom: 0vh;
-    border: 1px solid  #F5D42F;
+    border: 1px solid  #E0C228;
     padding: 8px;
     border-radius: 12px;
 }
 #scrollDown:hover{
     color: white;
-    background: #F5D42F;
+    background: #E0C228;
     /* text-shadow: 1px 1px black; */
 }
 #scrollUp{
     font-size: 2.5vh;
     align-self: center;
     text-decoration: none;
-    color: #F5D42F;
+    color: #E0C228;
     margin: 0;
     margin-top: 4vh;
-    border: 1px solid  #F5D42F;
+    border: 1px solid  #E0C228;
     padding: 8px;
     border-radius: 12px;
 }
 #scrollUp:hover{
     color: white;
-    background: #F5D42F;
+    background: #E0C228;
     /* text-shadow: 1px 1px black; */
 }
 #overlay h1{
@@ -79,7 +80,7 @@ opacity: 1;
     animation: fadeIn 8s;
 }
 #overlaySenape{
-    color: #F5D42F;
+    color: #E0C228;
     margin-right: 30px;
     animation: fadeIn 10s;
     
@@ -142,9 +143,12 @@ p{
 
 #OrganizzaProiezione{
     text-align: center;
+ 
     
 }
-
+#IlCollettivo{
+    /* background:#99bfb3 ; */
+}
 
 #schedaFilm{
     display: flex;
