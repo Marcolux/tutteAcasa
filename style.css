@@ -10,6 +10,7 @@ opacity: 1;
 body{
     margin: 0;
     padding: 0;
+    justify-items: center;
 }
 
 #Trailer{
@@ -32,7 +33,7 @@ border-bottom: 2px solid #E0C228;
     bottom: 10vh;
     color: white;
     font-size: 7vh;
-    letter-spacing: 2px;
+    letter-spacing: .12vw;
     /* border-bottom: 2px solid #E0C228; */
 }
 #overlayText{
@@ -82,7 +83,7 @@ border-bottom: 2px solid #E0C228;
 }
 #overlaySenape{
     color: #E0C228;
-    margin-right: 30px;
+    margin-right: 1vw;
     animation: fadeIn 10s;
     
     
@@ -104,12 +105,12 @@ border-bottom: 2px solid #E0C228;
     display: flex;
     flex-direction: column;
     justify-items: center;
-    background: rgba(0, 0, 0, 0.762);
+    background: rgba(0, 0, 0, 0.65);
     width: 100vw;
     height: 100vh;
     z-index: 1;
     opacity: 1;
-    border-bottom: 2px solid #E0C228;
+    /* border-bottom: 2px solid #E0C228; */
     
 }
 /* #bodyDescription{
@@ -127,7 +128,9 @@ section{
     text-justify:distribute;
     opacity: 1;
     justify-content: center;
-   
+    /* background: black; */
+    border-bottom: 2px solid #E0C228;
+    
     /* padding: 1vh; */
 }
 h4{
@@ -143,10 +146,47 @@ h3{
 
 #OrganizzaProiezione{
     text-align: center;
- 
-    
 }
+
+
+/* _____________________MISSION________________ */
+#Mission{
+display:flex;
+flex-direction: column;
+max-width: 90vw;
+font-size: 2vw;
+text-align: justify;
+padding: 2vh;
+/* border: 1px solid rgb(15, 12, 215); */
+}
+#MissionBox{
+    display: flex;
+    margin-bottom: 1vh;
+}
+
+#Mission a{
+    margin-left:82vw ;
+}
+
+
+#MissionDescription{
+width: 45vw;
+/* border: 1px solid rgb(223, 16, 16); */
+padding: 1vw;
+margin-left: 2vw;
+}
+
+#Mission h4{
+    font-size: 2.5vw;
+}
+#MissionPic{
+    border: 1px solid black;
+    width: 45vw;
+    min-height: 40vh;
+}
+
 /* _____________________IL COLLETTIVO________________ */
+
 #DescrizioneCollettivo{
     display: flex;
     flex-direction: column;
@@ -156,7 +196,8 @@ h3{
     /* align-items: center; */
     justify-content: center;
     margin-right: 2vw;
-    max-width: 50vw;
+    width: 40vw;
+    text-align:justify ;
 }
 #DescrizioneCollettivo img{
    margin-left: 10vw;
@@ -171,12 +212,17 @@ h3{
     /* background: black; */
     opacity: 1;
 }
+
+#IlCollettivo a{
+    margin-left: 4vw;
+}
 #IlCollettivoBox{
     display: flex;
     /* border: 1px solid #E0C228; */
     border-radius: .1vh;
     background: white;
     padding: 1vh;
+    justify-content: space-evenly;
 
 }
 
@@ -191,6 +237,7 @@ h3{
     border-bottom: 2px solid #E0C228;
     color: rgb(255, 255, 255);
 
+
 }
 /* #schedaFilm{
     display: flex;
@@ -199,9 +246,11 @@ h3{
 } */
 .Locandina{
     height: 75vh;
-    box-shadow: -.5px -.5px 2px 2px #E0C228 ;
+    /* box-shadow: -.5px -.5px 2px 2px #E0C228 ; */
     opacity: 1;
     /* width: 45vw; */
+    align-self: center;
+    margin: 1vh;
 
 }
 #LocandinaFilm{
@@ -251,9 +300,12 @@ h3{
     font-weight: 100;
     /* color:#000000; */
     color:#ffffff;
-    border: 2px solid #E0C228; 
+    /* border: 2px solid #E0C228;  */
     font-size: 2.5vh;
-    max-height: 17vh;
+    max-width: 45vw;
+    /* text-justify: distribute; */
+    word-wrap: break-word;
+    text-align: justify;
 }
 #Sinossi span{
     color: #E0C228;
@@ -272,6 +324,7 @@ list-style: none;
     text-decoration: none;
     color: #E0C228;
     border-radius: 1vh;
+    font-size: 1.8vh;
 }
 .linkToPages:hover{
     color: white;
@@ -293,8 +346,9 @@ footer{
 
 
     /* _______________Seconda Pagina: Il Film______________ */
+
     #IlFilmTrailer{
-        max-height: 60vh;
+        width: 50vw;
     }
     #trailerFilmPage{
         text-align: center;
@@ -302,12 +356,15 @@ footer{
         font-size: 3vh;
     }
     #SinossiLunga{
+        justify-self: center;
         display: flex;
         font-weight:300;
         font-size: larger;
         width: 85vw;
         padding: 1vh;
         margin-top: 2vh;
+        text-align: justify;
+        border: 1px solid black;
     }
     #SinossiLunga span{
         font-size: 2vh;
