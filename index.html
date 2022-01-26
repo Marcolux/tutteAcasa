@@ -5,12 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet" type="text/css"/>
-    <title>Document</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&family=Poppins:wght@200&display=swap" rel="stylesheet">
+    
+    <title>Tutte A Casa</title>
 </head>
 <header>
-
+    <nav class="nav">
+        <ul>
+            <a href="#IlFilm"><li>Il Film</li></a>
+            <a href=""><li>Press Room</li></a>
+            <a href=""><li>Il Collettivo</li></a>
+            <a href=""><li>Mission</li></a>
+           
+        </ul>
+    </nav>
+   
 </header>
 <body>
+
     <div id="TrailerBox">
     
    
@@ -24,18 +37,22 @@
             <h1 id="overlayTutte">TUTTE A</h1>
             <h1 id="overlaySenape"> CASA</h1>
             </div>
-            <a id="scrollDown" href="#IlFilm">Scopri di più</a>
+            <!-- <a id="scrollDown" href="#IlFilm">Scopri di più</a> -->
         </div>
 
     </div>
     <div id="bodyDescription">
         <section id="IlFilm">
-            <h3 id="Sinossi">
+                <div id="Sinossi">
+                <h3>
                 <span >Un documentario</span> partecipato composto da oltre<span> 8.000 videodiari</span>, 
                 girati con il cellulare da <span >500 donne</span>  di estrazione sociale ed età diverse durante il primo lockdown, 
-                che ha colpito l’Italia nella <span> primavera del 2020</span>.
+                che ha colpito l’Italia nella <span> primavera del 2020</span>
+                </h3>
+                <h3>
                 <span>“Tutte a Casa - memorie digitali da un mondo sospeso”</span> indaga cosa ci spinge a reagire durante una crisi e come si rinasce, 
                 a volte più forti, a volte più fragili o semplicemente diverse.</h3>
+                </div>
             
                 <div id="LocandinaFilm">
                     <img class="Locandina" src="./imgs/LocandinaTutteACasa-light.jpg" alt="Locandina">
@@ -68,29 +85,30 @@
                         </li>
                     </ul>
                 </div>
+                
                 <a class="linkToPages" href="ilFilm.html">Il Film</a>
                
         
         </section>
         <section id="IlCollettivo">
-            <div id="IlCollettivoBox">
-            <div id="DescrizioneCollettivo">
-                <h3>La nostra storia:</h3>
-                <p>Siamo un gruppo di  sedici professioniste del mondo del cinema e della comunicazione, 
-                che nei primi giorni della quarantena ci siamo incontrate su un gruppo Facebook dedicato al cinema 
-                e abbiamo deciso di unire le forze, colte dall’urgenza di documentare il momento di crisi che si stava configurando. 
-                Così è nato il Collettivo Tutte a casa e successivamente l'omonima associazione. 
-                Abbiamo messo al centro della nostra attività alcuni principi per noi fondamentali: la partecipazione, l’orizzontalità e la gentilezza. 
-                La nostra sfida è stata quella di continuare a raccontare storie e lavorare nonostante la crisi, perciò abbiamo iniziato ad organizzare, 
-                produrre e dirigere un film a distanza, creando una vera e propria casa di produzione online tutta al femminile.
-                </p>
+            <div id="IlCollettivoBox" class="boxes">
+                <div id="DescrizioneCollettivo">
+                    <h3>La nostra storia:</h3>
+                    <p>Siamo un gruppo di  sedici professioniste del mondo del cinema e della comunicazione, 
+                    che nei primi giorni della quarantena ci siamo incontrate su un gruppo Facebook dedicato al cinema 
+                    e abbiamo deciso di unire le forze, colte dall’urgenza di documentare il momento di crisi che si stava configurando. 
+                    Così è nato il Collettivo Tutte a casa e successivamente l'omonima associazione. 
+                    Abbiamo messo al centro della nostra attività alcuni principi per noi fondamentali: la partecipazione, l’orizzontalità e la gentilezza. 
+                    La nostra sfida è stata quella di continuare a raccontare storie e lavorare nonostante la crisi, perciò abbiamo iniziato ad organizzare, 
+                    produrre e dirigere un film a distanza, creando una vera e propria casa di produzione online tutta al femminile.
+                    </p>
+                    <a class="linkToPages" href="ilCollettivo.html">Il Collettivo</a>
+                </div>
+                <img class="Locandina" src="./imgs/Tutte a casa_naandeyeah_Blue.jpg">
             </div>
-            <img class="Locandina" src="./imgs/Tutte a casa_naandeyeah_Blue.jpg">
-            </div>
-            <a class="linkToPages" href="ilCollettivo.html">Il Collettivo</a>
         </section>
         <section id="Mission">
-            <div id="MissionBox">
+            <div id="MissionBox" class="boxes">
                 <div id="MissionPic"></div>
                 <div id="MissionDescription">
                     <h4>I nostri orizzonti</h4>
@@ -108,9 +126,12 @@
 
         <section id="OrganizzaProiezione">
             <h3>Vorresti proiettare il film nella tua città? <a href="mailto:cristinaderedita@gmail.com?subject=Hello">Scrivici</a> , le valigie sono già pronte!</h3>
-            <a id="scrollUp" href="#TrailerBox">Torna Su</a>
+            <a id="scrollUp"
+            
+             >Su</a>
         </section>
     </div>
+    <script src="/script.js" defer></script>
 </body>
 <footer>
 
