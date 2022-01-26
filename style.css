@@ -468,7 +468,7 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        animation: translate 1s;
+        animation: translate .5s;
        
 
     }
@@ -482,7 +482,7 @@ footer{
         
     }
     #IlFilmTrailer{
-        animation: translate 1.2s;
+        animation: translate .7s;
         width: 50vw;
         
     }
