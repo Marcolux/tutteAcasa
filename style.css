@@ -31,6 +31,7 @@ nav{
     margin: 0;
     display: flex;
     position: fixed;
+    left: 0;
     justify-content: center;
     background: linear-gradient(0deg, rgba(253, 187, 45, 0.289) 0%,rgb(0, 0, 0) 95%, rgb(0, 0, 0)100%);
     z-index: 1;
@@ -88,9 +89,11 @@ opacity: 1;
     padding: 0;
     margin-bottom: 25vh;
     margin-left: 1vw;
-    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Poppins', sans-serif; */
     letter-spacing: .2vw;
-    /* font-family:'Tw Cen MT'; */
+    font-family:'Tw Cen MT';
+    position: absolute;
+    bottom: -35vh;
 }
 #overlayTutte{
     animation: fadeIn 8s;
@@ -461,14 +464,33 @@ footer{
 
 
     /* _______________Seconda Pagina: Il Film______________ */
+    #IlFilmPage{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        animation: translate 1s;
+       
 
+    }
+    @keyframes translate {
+        0%{
+            transform: translateX(100vw);
+        }
+        100%{
+            transform: translateX(0vw);
+        }
+        
+    }
     #IlFilmTrailer{
+        animation: translate 1.2s;
         width: 50vw;
+        
     }
     #trailerFilmPage{
         text-align: center;
         margin-top: 3vh;
         font-size: 3vh;
+        margin-top: 10vh ;
     }
     #SinossiLunga{
         justify-self: center;
