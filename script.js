@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (scrollStart > offset.top) {
             nav.style.background ='black';
         } else {
-            nav.style.background = 'linear-gradient(0deg, rgba(253, 187, 45, 0.289) 0%,rgb(0, 0, 0) 95%, rgb(0, 0, 0)100%)';
+            nav.style.background = 'linear-gradient(0deg,rgb(110, 57, 216, 0.289) 0%,rgb(0, 0, 0) 95%, rgb(0, 0, 0)100%)';
         }
     };
 });
